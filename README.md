@@ -1,5 +1,7 @@
 # simple-https-java
 
+This example requires GraalVM with Java 11.
+
 Steps to reproduce:
 
 1. `javac SimpleHTTPSServer.java`
