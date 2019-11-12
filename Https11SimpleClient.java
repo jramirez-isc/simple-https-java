@@ -10,6 +10,9 @@ public class Https11SimpleClient {
 
 	public static void main(String[] args) throws Exception {
 
+		System.out.println("javax.net.ssl.trustStore: " + System.getProperty("javax.net.ssl.trustStore"));
+	        System.out.println("javax.net.ssl.trustStorePassword: " + System.getProperty("javax.net.ssl.trustStorePassword"));
+
 		HttpClient httpClient = HttpClient.newBuilder().version(Version.HTTP_1_1).proxy(ProxySelector.getDefault())
 				.build();
 
